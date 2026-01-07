@@ -241,13 +241,12 @@ section, .section {
 
 /* Additional hero + card mobile tweaks */
 @media (max-width: 768px) {
-  /* Reduce hero logo on tablets/phones */
+  /* Increase hero logo on mobile (~35% larger than previous mobile size) */
   .section--hero .section-content > img {
-    max-width: 180px !important;
+    max-width: 240px !important;
     height: auto !important;
   }
 
-  /* Keep CTA buttons full-width stacked, but maintain social badges' fixed size */
   .section--hero .hero-cta-row {
     width: 100%;
   }
@@ -275,14 +274,8 @@ section, .section {
     flex: 0 0 44px !important;
   }
 
-  /* Smaller phones: shrink logo further */
-  @media (max-width: 480px) {
-    .section--hero .section-content > img {
-      max-width: 140px !important;
-    }
-  }
-
   /* Center headings, paragraphs and images inside the card-style sections on mobile */
+  .section-cards h2,
   .section-cards h3,
   .section-cards p {
     text-align: center !important;
@@ -292,5 +285,25 @@ section, .section {
     margin-left: auto !important;
     margin-right: auto !important;
     display: block !important;
+  }
+}
+
+/* Smaller phones */
+@media (max-width: 480px) {
+  .section--hero .section-content > img {
+    max-width: 200px !important;
+  }
+
+  .section-cards h2,
+  .section-cards h3,
+  .section-cards p {
+    font-size: 1rem !important;
+  }
+}
+
+/* Center section 5 header on mobile */
+@media (max-width: 768px) {
+  .section--contact h2 {
+    text-align: center !important;
   }
 }
