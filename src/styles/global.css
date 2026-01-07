@@ -1,0 +1,164 @@
+:root {
+  --color-bg: #ffffff;
+  --color-surface: #f4f6f8;
+  --color-text: #111111;
+  --color-muted: #4b5563;
+  --color-accent: #c62828;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+section {
+  margin-bottom: 5rem;
+}
+
+h1, h2, h3 {
+  line-height: 1.25;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+p {
+  max-width: 800px;
+  color: var(--color-muted);
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--color-accent);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+
+
+.section--alt {
+  background: #ffffff;
+}
+
+.section-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.section {
+  margin: 0 auto 5rem auto;
+  max-width: 1100px;
+}
+
+/* Unified layout and red border for all sections */
+section, .section {
+  margin: 0 auto 5rem auto;
+  max-width: 1100px;
+  border: 6px solid #c62828;
+  border-radius: 16px;
+  padding: 3.5rem 3rem;
+  position: relative;
+}
+
+/* Hero section (first section) — tighter top/left spacing so logo sits near corner */
+.section--hero {
+  padding-top: 1rem; /* reduce excessive top space */
+  padding-left: 1rem; /* keep left spacing equal to top */
+}
+
+.sprayer-icon-right {
+  position: absolute;
+  width: 36px;          /* SMALL by default */
+  height: auto;
+  opacity: 0.35;        /* subtle */
+  pointer-events: none; /* purely decorative */
+}
+
+/* Left sprayer used in second section: same size/opacity as first, flipped horizontally */
+.sprayer-icon-left {
+  position: absolute;
+  width: 66px; /* match first section */
+  height: auto;
+  opacity: 0.95; /* match first section */
+  pointer-events: none;
+  top: -16px;
+  left: 22px;
+  transform: scaleX(-1); /* mirror across Y axis */
+}
+
+/* Third section sprayer — top-right, unmirrored */
+.sprayer-icon-top-right {
+  position: absolute;
+  width: 66px;
+  height: auto;
+  opacity: 0.95;
+  pointer-events: none;
+  top: -16px;
+  right: 22px;
+}
+
+/* Third section sprayer — bottom-left, mirrored */
+.sprayer-icon-bottom-left {
+  position: absolute;
+  width: 66px;
+  height: auto;
+  opacity: 0.95;
+  pointer-events: none;
+  bottom: -16px;
+  left: 22px;
+  transform: scaleX(-1);
+}
+
+/* Fourth section sprayers */
+.sprayer-icon-top-left {
+  position: absolute;
+  width: 66px;
+  height: auto;
+  opacity: 0.95;
+  pointer-events: none;
+  top: -16px;
+  left: 22px;
+  transform: scaleX(-1);
+}
+
+.sprayer-icon-bottom-right {
+  position: absolute;
+  width: 66px;
+  height: auto;
+  opacity: 0.95;
+  pointer-events: none;
+  bottom: -16px;
+  right: 22px;
+}

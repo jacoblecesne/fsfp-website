@@ -1,4 +1,6 @@
 ---
+import "../styles/global.css";
+
 const title = "First Step Fire Protection";
 const subtitle =
   "Wildfire mitigation services for homes, infrastructure, and communities — planned, executed, and documented.";
@@ -12,31 +14,331 @@ const subtitle =
     <title>{title}</title>
   </head>
   <body>
-    <main style="max-width: 1100px; margin: 0 auto; padding: 4rem 1.5rem;">
-      <section style="margin-bottom: 4rem;">
-        <h1 style="font-size: 3rem; line-height: 1.2; margin-bottom: 1rem;">
-          {title}
-        </h1>
+   <section class="section section--hero">
+  <div class="section-content">
+    <img
+      src="/images/fsfp-logo.png"
+      alt="First Step Fire Protection"
+      style="max-width: 400px; margin-bottom: 2rem; display: block;"
+    />
 
-        <p style="font-size: 1.25rem; max-width: 700px; margin-bottom: 2rem;">
-          {subtitle}
-        </p>
+    <h1 style="margin-bottom: 1rem;">
+      {title}
+    </h1>
 
-        <a
-          href="#contact"
-          style="
-            display: inline-block;
-            padding: 0.75rem 1.5rem;
-            background: #c62828;
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-            border-radius: 4px;
-          "
-        >
+    <p style="font-size: 1.2rem; margin-bottom: 2rem;">
+      {subtitle}
+    </p>
+
+    <div style="display: flex; gap: 1rem; align-items: center; justify-content: space-between;">
+      <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <a href="#contact" class="button">
           Request a Mitigation Assessment
         </a>
-      </section>
+        <a href="tel:(541)-280-2691" class="button">
+          Call Us Now
+        </a>
+      </div>
+      <div style="display: flex; gap: 1rem;">
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; background: #c62828; border-radius: 4px; color: #fff; font-size: 1.3rem; text-decoration: none;">
+          f
+        </a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; background: #c62828; border-radius: 4px; color: #fff; font-size: 1.3rem; text-decoration: none;">
+          📷
+        </a>
+        <a href="https://www.x.com" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; background: #c62828; border-radius: 4px; color: #fff; font-size: 1.3rem; text-decoration: none;">
+          𝕏
+        </a>
+      </div>
+    </div>
+  </div>
+ <img
+  src="/images/sprayer-icon-right.png"
+  alt=""
+  style="
+    position: absolute;
+    width: 66px;
+    height: auto;
+    bottom: -16px;
+    right: 22px;
+    opacity: 0.95;
+    pointer-events: none;
+  "
+/>
+</section>
+<section class="section section--alt">
+  <div class="section-content">
+    <h2 style="font-weight: 700;">What We Do</h2>
+  <p style="max-width: 780px; margin-bottom: 2.5rem; font-size: 1.2rem; font-weight: 500;">
+    First Step Fire Protection specializes in the application of long-term
+    wildfire retardants using the same active ingredients trusted by the
+    U.S. Forest Service. Our work focuses on targeted, high-impact treatments
+    that slow fire spread, reduce ignition potential, and buy critical time
+    during wildfire events.
+  </p>
+
+  <div
+    style="
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    "
+  >
+    <div>
+      <h3 style="margin-bottom: 0.5rem; font-weight: 700;">Residential Perimeter Protection</h3>
+      <p style="font-size: 1.05rem; font-weight: 500;">
+        Application of long-term fire retardants around homes and structures to
+        create defensible perimeters designed to resist ember intrusion and
+        surface fire spread throughout fire season.
+      </p>
+    </div>
+
+    <div>
+      <h3 style="margin-bottom: 0.5rem; font-weight: 700;">Critical Infrastructure Protection</h3>
+      <p style="font-size: 1.05rem; font-weight: 500;">
+        Targeted retardant treatments around communication towers, substations,
+        pump stations, and other essential assets where continuity of operation
+        is critical during wildfire events.
+      </p>
+    </div>
+
+    <div>
+      <h3 style="margin-bottom: 0.5rem; font-weight: 700;">Roadway & Evacuation Corridor Protection</h3>
+      <p style="font-size: 1.05rem; font-weight: 500;">
+        Strategic application of long-term retardants along roadways and
+        evacuation routes to reduce roadside ignition risk and improve safety
+        for evacuation and emergency response.
+      </p>
+    </div>
+  </div>
+
+  <div
+    style="
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 1rem;
+    "
+  >
+    <img
+      src="/images/residential-boarder.png"
+      alt="Residential Perimeter Protection"
+      style="width: 100%; height: auto;"
+    />
+    <img
+      src="/images/critical-boarder.png"
+      alt="Critical Infrastructure Hardening"
+      style="width: 100%; height: auto;"
+    />
+    <img
+      src="/images/evacuation-boarder.png"
+      alt="Evacuation Corridor Protection"
+      style="width: 100%; height: auto;"
+    />
+  </div>
+
+  <img
+    src="/images/sprayer-icon-right.png"
+    alt=""
+    class="sprayer-icon-left"
+  />
+</section>
+<section style="margin-bottom: 4rem;">
+  <h2 style="font-size: 2.3rem; margin-bottom: 1rem; font-weight: 700;">
+    How It Works
+  </h2>
+
+  <p style="max-width: 780px; margin-bottom: 3rem; font-size: 1.2rem; font-weight: 500;">
+    First Step Fire Protection delivers wildfire mitigation through a clear,
+    repeatable process designed to reduce risk, support decision-making, and
+    create defensible records of work performed.
+  </p>
+
+  <div
+    style="
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2.5rem;
+    "
+  >
+    <div>
+      <h3 style="margin-bottom: 0.5rem; font-weight: 700;">1. Assess</h3>
+      <p style="font-size: 1.05rem; font-weight: 500;">
+        We evaluate site-specific wildfire exposure based on asset type,
+        surrounding fuels, access, and operational priorities. Assessments are
+        tailored to homes, infrastructure, and evacuation corridors rather than
+        one-size-fits-all treatments.
+      </p>
+    </div>
+
+    <div>
+      <h3 style="margin-bottom: 0.5rem; font-weight: 700;">2. Mitigate</h3>
+      <p style="font-size: 1.05rem; font-weight: 500;">
+        Long-term fire retardants are applied strategically using products with
+        the same active ingredients trusted by the U.S. Forest Service, adapted
+        for residential and infrastructure protection throughout fire season.
+      </p>
+    </div>
+
+    <div>
+      <h3 style="margin-bottom: 0.5rem; font-weight: 700;">3. Document</h3>
+      <p style="font-size: 1.05rem; font-weight: 500;">
+        Every treatment is mapped, time-stamped, and documented using First Fire
+        Map, creating a clear visual record of mitigation efforts that can be
+        reviewed by property owners, agencies, and partners.
+      </p>
+    </div>
+  </div>
+
+  <div
+    style="
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 1rem;
+    "
+  >
+    <img
+      src="/images/red-check-box.jpg"
+      alt="Check box"
+      style="width: 100%; height: auto; max-width: 56%; margin: 0 auto;"
+    />
+    <img
+      src="/images/red-check-box.jpg"
+      alt="Check box"
+      style="width: 100%; height: auto; max-width: 56%; margin: 0 auto;"
+    />
+    <img
+      src="/images/red-check-box.jpg"
+      alt="Check box"
+      style="width: 100%; height: auto; max-width: 56%; margin: 0 auto;"
+    />
+  </div>
+
+  <img
+    src="/images/sprayer-icon-right.png"
+    alt=""
+    class="sprayer-icon-top-right"
+  />
+
+  <img
+    src="/images/sprayer-icon-right.png"
+    alt=""
+    class="sprayer-icon-bottom-left"
+  />
+</section>
+<section class="section">
+  <h2 style="font-size: 2.3rem; margin-bottom: 1rem; font-weight: 700; text-align: center;">
+    Built for Accountability. Designed for Defensible Records.
+  </h2>
+
+  <p style="max-width: 800px; margin-bottom: 2rem; font-size: 1.2rem; font-weight: 500; text-align: center; margin-left: auto; margin-right: auto;">
+    Wildfire mitigation only matters if it can be verified, reviewed, and
+    maintained over time. First Step Fire Protection documents every treatment
+    spatially and operationally, creating clear records of what was done, where
+    it was done, and when it was performed.
+  </p>
+
+  <p style="max-width: 800px; margin-bottom: 2rem; font-size: 1.2rem; font-weight: 500; text-align: center; margin-left: auto; margin-right: auto;">
+    Our work is supported by <strong>First Fire Map</strong>, a wildfire
+    mitigation mapping and documentation platform designed to provide visibility
+    for property owners, agencies, insurers, and decision-makers. Treatments are
+    mapped to real-world assets and locations, creating a living record that
+    supports planning, reporting, and accountability.
+  </p>
+
+  <div
+    style="
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2.5rem;
+      margin-bottom: 2.5rem;
+    "
+  >
+    <img
+      src="/images/FFMexampleGraphic.png"
+      alt="First Fire Map Example"
+      style="width: 100%; height: auto;"
+    />
+    <img
+      src="/images/FFMCritInfragraphic.png"
+      alt="Critical Infrastructure Graphic"
+      style="width: 100%; height: auto;"
+    />
+    <img
+      src="/images/FFMEvacRteGraphic.png"
+      alt="Evacuation Route Graphic"
+      style="width: 100%; height: auto;"
+    />
+  </div>
+
+  <div
+  style="
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: -1.5rem;
+    gap: 2rem;
+  "
+>
+  <p style="font-size: 1.1rem; margin: 0; text-align: left;">
+    Learn more about the platform at
+    <a
+      href="https://www.firstfiremap.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      style="color: #c62828; font-weight: 600; text-decoration: none;"
+    >
+      www.firstfiremap.com
+    </a>.
+  </p>
+
+  <img
+    src="/images/first-fire-map-logo.png"
+    alt="First Fire Map"
+    style="max-width: 120px; opacity: 0.85; flex-shrink: 0;"
+  />
+</div>
+
+  <img
+    src="/images/sprayer-icon-right.png"
+    alt=""
+    class="sprayer-icon-top-left"
+  />
+
+  <img
+    src="/images/sprayer-icon-right.png"
+    alt=""
+    class="sprayer-icon-bottom-right"
+  />
+
+</section>
+<section class="section">
+  <h2 style="font-size: 2.3rem; margin-bottom: 1rem; font-weight: 700;">
+    Request a Mitigation Assessment
+  </h2>
+
+  <img
+    src="/images/sprayer-icon-right.png"
+    alt=""
+    class="sprayer-icon-top-left"
+  />
+  <div style="display: grid; grid-template-columns: 1fr 0.4fr 1fr; gap: 0.8rem; align-items: center; margin-top: 1.5rem;">
+    <div style="text-align: center;">
+      <a href="mailto:info@firststepfireprotection.com" style="color: var(--color-accent); font-weight: 600; text-decoration: none; font-size: 1.32rem;">
+        info@firststepfireprotection.com
+      </a>
+    </div>
+    <div></div>
+    <div style="text-align: center;">
+      <a href="tel:5412802691" style="color: var(--color-accent); font-weight: 600; text-decoration: none; font-size: 1.32rem;">
+        (541)-280-2691
+      </a>
+    </div>
+  </div>
+</section>
     </main>
   </body>
 </html>
