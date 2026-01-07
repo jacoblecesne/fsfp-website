@@ -310,9 +310,9 @@ section, .section {
 
 /* Normalize section headers size and weight on mobile (all sections) */
 @media (max-width: 768px) {
-  /* Aim for ~15% smaller than 2.3rem (≈1.95rem) */
-  .section > h2,
-  .section--hero > .section-content > h1 {
+  /* Aim for ~15% smaller than 2.3rem (≈1.95rem) — all top-level section headers */
+  .section h1,
+  .section h2 {
     font-size: 1.95rem !important;
     font-weight: 700 !important;
     line-height: 1.2 !important;
