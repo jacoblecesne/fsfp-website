@@ -198,3 +198,43 @@ section, .section {
     align-items: flex-start !important;
   }
 }
+
+/* Mobile centering for section 1 (Hero) */
+@media (max-width: 768px) {
+  .section--hero .section-content {
+    text-align: center;
+  }
+  
+  .section--hero .section-content img {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  
+  .section--hero .section-content h1,
+  .section--hero .section-content p {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  
+  .section--hero .section-content > div[style*="justify-content"] {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 1.5rem !important;
+  }
+  
+  .section--hero .section-content > div > div {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+  
+  .section--hero .section-content > div > div a {
+    width: 100% !important;
+    text-align: center !important;
+  }
+  
+  .section--hero .section-content > div > div:last-child {
+    justify-content: center !important;
+    width: auto !important;
+  }
+}
