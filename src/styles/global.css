@@ -238,3 +238,59 @@ section, .section {
     width: auto !important;
   }
 }
+
+/* Additional hero + card mobile tweaks */
+@media (max-width: 768px) {
+  /* Reduce hero logo on tablets/phones */
+  .section--hero .section-content > img {
+    max-width: 180px !important;
+    height: auto !important;
+  }
+
+  /* Keep CTA buttons full-width stacked, but maintain social badges' fixed size */
+  .section--hero .hero-cta-row {
+    width: 100%;
+  }
+
+  .section--hero .hero-cta {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 0.75rem !important;
+    width: 100% !important;
+  }
+
+  .section--hero .hero-cta .button {
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  .section--hero .hero-social {
+    justify-content: center !important;
+    gap: 0.75rem !important;
+  }
+
+  .section--hero .hero-social a {
+    width: 44px !important;
+    height: 44px !important;
+    flex: 0 0 44px !important;
+  }
+
+  /* Smaller phones: shrink logo further */
+  @media (max-width: 480px) {
+    .section--hero .section-content > img {
+      max-width: 140px !important;
+    }
+  }
+
+  /* Center headings, paragraphs and images inside the card-style sections on mobile */
+  .section-cards h3,
+  .section-cards p {
+    text-align: center !important;
+  }
+
+  .section-cards img {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
+  }
+}
