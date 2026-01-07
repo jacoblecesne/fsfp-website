@@ -307,3 +307,20 @@ section, .section {
     text-align: center !important;
   }
 }
+
+/* Normalize section headers size and weight on mobile (all sections) */
+@media (max-width: 768px) {
+  /* Aim for ~15% smaller than 2.3rem (≈1.95rem) */
+  .section > h2,
+  .section--hero > .section-content > h1 {
+    font-size: 1.95rem !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+  }
+
+  /* Ensure subsection titles in cards are slightly smaller but bold-matched */
+  .section-cards h3 {
+    font-size: 1.25rem !important;
+    font-weight: 700 !important;
+  }
+}
